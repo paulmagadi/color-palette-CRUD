@@ -43,7 +43,10 @@ const paletteNameSuggestions = [
     "Vibrant Sunset", "Ocean Breeze", "Forest Greens", "Autumn Leaves",
     "Winter Frost", "Summer Vibes", "Spring Bloom", "Pastel Dreams",
     "Neon Nights", "Earth Tones", "Cool Blues", "Warm Reds",
-    "Muted Palette", "Bold Contrasts", "Rainbow Spectrum"
+    "Muted Palette", "Bold Contrasts", "Rainbow Spectrum", "Artistic and Bold",
+    "Tech and Vibrant", "Corporate", "Soft and Clean", "Olive Leaves",
+    "Deep Sedona", "Pacific Coast", "Blue Hrricanes", "Lavender Moon",
+    "Sunset"
 ];
 
 // Event Listeners
