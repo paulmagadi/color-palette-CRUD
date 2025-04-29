@@ -13,7 +13,12 @@ const updateBtn = document.getElementById("updatePalette");
 
 // API Configuration
 // const API_URL = "http://localhost:8000/api/palettes";
-const API_URL = "https://api-eeex.onrender.com/api/palettes";
+// const API_URL = "https://api-eeex.onrender.com/api/palettes";
+
+const API_URL = window.location.hostname === 'paulmagadi.github.io' 
+  ? 'https://api-eeex.onrender.com/api/palettes'
+  : 'http://localhost:8000/api/palettes';
+  
 // State
 let selectedColors = [];
 let currentlyEditingId = null;
