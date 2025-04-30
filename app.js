@@ -237,7 +237,14 @@ async function fetchAndRenderPalettes() {
         // Optionally, you can render an empty state or a message to the user
         paletteContainer.innerHTML = "<p>No palettes available.</p>";
         // Or render a default state
-        renderPalettes([{ id: 1, name: "Default Palette", colors: ["#FF0000", "#00FF00", "#0000FF", "#BF39A9"] }]); // Uncomment this line if you have a default state to show
+        renderPalettes([
+            { id: 1, name: "Default Palette 1", colors: ["#FF0000", "#00FF00", "#0000FF", "#BF39A9"] },
+            { id: 2, name: "Default Palette 2", colors: ["#000298", "#F2F2F0", "#A5D7FC", "#0E0F52"] },
+            { id: 3, name: "Default Palette 3", colors: ["#FFFFFF", "#FFA500", "#FF6347", "#9370DB"] },
+            { id: 4, name: "Default Palette 4", colors: ["#32CD32", "#8C1C03", "#F2911B", "#D95F18"] },
+            { id: 5, name: "Default Palette 5", colors: ["#FF69B4", "#FFA500", "#FF6347", "#9370DB"] },
+            { id: 6, name: "Default Palette 6", colors: ["#177654", "#EBDFAB", "#0C211D", "#E15D3D"] }
+        ]); // Uncomment this line if you have a default state to show
         // renderPalettes([]);
         // return []; 
     }
