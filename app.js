@@ -228,11 +228,18 @@ function getApiUrl(path = "") {
 async function fetchAndRenderPalettes() {
     try {
         const response = await fetch(getApiUrl());
-        if (!response.ok) throw new Error("Network response was not ok");
+        if (!response.ok) 
+            throw new Error("Network response was not ok");
         renderPalettes(await response.json());
     } catch (error) {
         console.error("Error fetching palettes:", error);
-        alert("Failed to load palettes. See console for details.");
+        alert("Failed to load palettes. See console for details. No that you might wait a few seconds for the first load.");
+        // Optionally, you can render an empty state or a message to the user
+        paletteContainer.innerHTML = "<p>No palettes available.</p>";
+        // Or render a default state
+        renderPalettes([{ id: 1, name: "Default Palette", colors: ["#FF0000", "#00FF00", "#0000FF", "#BF39A9"] }]); // Uncomment this line if you have a default state to show
+        // renderPalettes([]);
+        // return []; 
     }
 }
 
