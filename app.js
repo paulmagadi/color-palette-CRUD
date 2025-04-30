@@ -233,9 +233,9 @@ async function fetchAndRenderPalettes() {
         renderPalettes(await response.json());
     } catch (error) {
         console.error("Error fetching palettes:", error);
-        alert("Failed to load palettes. See console for details. No that you might wait a few seconds for the first load.");
+        alert("Failed to load palettes. See console for details. Note that you might wait a few seconds for the first load.");
         // Optionally, you can render an empty state or a message to the user
-        paletteContainer.innerHTML = "<p>No palettes available.</p>";
+        // paletteContainer.innerHTML = "<p>No palettes available.</p>";
         // Or render a default state
         return renderPalettes([
             { id: 1, name: "Default Palette 1", colors: ["#FF0000", "#00FF00", "#0000FF", "#BF39A9"] },
